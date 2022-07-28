@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+
+
+.grass {
+    background-color: green;
+    border: 10px solid #011402;
+}
+
+.fire {
+    background-color: orange;
+    border: 10px solid #776202;
+}
+
+.water {
+    background-color: rgb(50, 157, 223);
+    border: 10px solid #191a5f;
+}
+
+.bug {
+    background-color: rgb(100, 34, 34);
+    border: 10px solid #160106;
+}
+
+.normal {
+    background-color: blanchedalmond;
+    border: 10px solid #cfda3e;
+}
+
+.poison {
+    background-color: rgb(104, 88, 120);
+    border: 10px solid #0e0e2c;
+}
+
+.fairy {
+    background-color: rgb(236, 157, 239);
+    border: 10px solid #673f76;
+}
+
+.electric {
+    background-color: rgb(207, 231, 57);
+    border: 10px solid #799641;
+}
+
+.rock {
+    background-color: rgb(86, 80, 80);
+    border: 10px solid #0c0c12;
+}
+
+.ice {
+    background-color: #79d6e7;
+    border: 10px solid #bbbbc0;
+}
+
+.psychic {
+    background-color: rgb(246, 85, 125);
+    border: 10px solid #23051e;
+}
+
+.dragon {
+    background-color: rgb(73, 27, 82);
+    border: 10px solid #1a1b43;
+}
+
+.ghost {
+    background-color: aliceblue;
+    border: 10px solid #080808;
+}
+
+.fighting {
+    background-color: rgb(114, 101, 1);
+    border: 10px solid #2d280f;
+}
+
+.ground {
+    background-color: rgb(100, 62, 4);
+    border: 10px solid #c1aa56;
+}
+
+
+
+*{
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+
+    
+}
+
+body{
+    background-color: rgb(129, 80, 21);
+    background-image: url(https://media2.giphy.com/media/W04QVzelTHsNW/giphy.gif?cid=790b7611ed8252bb2b7440c8ac7678ce39a9ea5b041ae515&rid=giphy.gif&ct=g);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #d8cd30;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.logo img{
+    height: 200px;
+    width: 300px;
+}
+
+
+h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    color: rgb(81, 13, 13);
+    text-transform: capitalize;
+}
+
+h5 {
+    color: #1f1d1d;
+    font-size: 15px;
+}
+
+figure {
+    z-index: 1;
+    gap: 10px;
+    width: 125px;
+    height: 175px;
+    border-radius: 5%;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: none;
+    width: 60px;
+}
+
+img {
+    width: 100%;
+    height: 100px;
+}
+
+
+#pokemonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid #60604b;
+    border-radius: 10px;
+    margin: 60px;
+    justify-content: space-around;
+    background-color: #d0d2c8cf;
+ } 
+
+
+
+.card {
+    color: white;
+    display: grid;
+    place-items: center;
+    position: relative;
+    height: 200px;
+    width: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .card::before {
+    content: "";
+    width: 110px;
+    height: 350px;
+    left: 10px;
+    top: -70px;
+    position: absolute;
+    background: linear-gradient(#e2dc28, #f44105);
+    animation: animate 2s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card::after {
+    content: "";
+    position: absolute;
+    background: #333;
+    inset: 3px;
+    border-radius: 8px;
+  }
+  
+  .card .content {
+    z-index: 1;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: aqua;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 90px;
+    margin: 10px;
+    color: black;
+}
+
+h3 {
+    text-align: center;
+    font-size: 50px;
+    color: blue;
+    margin: 15px;
+}
+
+.pokemonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.img {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+}*/
